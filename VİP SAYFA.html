@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mami VIP</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .spear {
+            animation: move 2s infinite;
+            font-size: 40px;
+        }
+        .title {
+            animation: colorChange 3s infinite;
+        }
+        @keyframes move {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes colorChange {
+            0% { color: white; }
+            50% { color: red; }
+            100% { color: yellow; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="spear">🗡️</div>
+        <div class="title">Mami VIP</div>
+        <div class="spear">🗡️</div>
+    </div>
+</body>
+</html>
+<
